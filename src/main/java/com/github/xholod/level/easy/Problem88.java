@@ -44,8 +44,7 @@ public class Problem88 {
         } else if (nums2.length == 0) {
             resultArray = nums1;
         }
-
-        nums1 = resultArray;
+        System.arraycopy(resultArray, 0, nums1, 0, nums1.length);
         System.out.println(Arrays.toString(nums1));
     }
 
